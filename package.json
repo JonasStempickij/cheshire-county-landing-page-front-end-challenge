@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "bootstrap": "^5.1.3"
-  }
+  },
+  "name": "cheshire-county-landing-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonasStempickij/cheshire-county-landing-page-front-end-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonasStempickij/cheshire-county-landing-page-front-end-challenge/issues"
+  },
+  "homepage": "https://github.com/JonasStempickij/cheshire-county-landing-page-front-end-challenge#readme",
+  "description": ""
 }
