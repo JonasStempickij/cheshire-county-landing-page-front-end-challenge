@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Cheshire Country</title>
   </head>
-
   <body>
     <main>
       <!-- Navbar -->
@@ -26,11 +26,11 @@
           </button>
           <div class="collapse navbar-collapse align-items-stretch" id="navbar">
             <ul class="navbar-nav ms-auto">
-              <a href="#" class="nav-link d-flex align-items-center">Features</a>
-              <a href="#" class="nav-link d-flex align-items-center">About</a>
-              <a href="#" class="nav-link d-flex align-items-center">Pricing</a>
-              <a href="#" class="nav-link d-flex align-items-center">Reviews</a>
-              <a href="#" class="nav-link d-flex align-items-center">Contact</a>
+              <a href="#features" class="nav-link d-flex align-items-center">Features</a>
+              <a href="#about" class="nav-link d-flex align-items-center">About</a>
+              <a href="#pricing" class="nav-link d-flex align-items-center">Pricing</a>
+              <a href="#reviews" class="nav-link d-flex align-items-center">Reviews</a>
+              <a href="#contact" class="nav-link d-flex align-items-center">Contact</a>
             </ul>
           </div>
         </div>
@@ -81,16 +81,17 @@
               </p>
             </div>
             <div class="primary col-12 col-md-6 d-flex justify-content-between">
-              <img src="assets/img/facebook-logo.png" height="30px" alt="" />
-              <img src="assets/img/instagram-logo.png" height="30px" alt="" />
-              <img src="assets/img/twitter-logo.png" height="30px" alt="" />
-              <img src="assets/img/pinterest-logo.png" height="30px" alt="" />
+              <a href="#"><img src="assets/img/facebook-logo.png" height="30px" alt="" /></a>
+              <a href="#"><img src="assets/img/instagram-logo.png" height="30px" alt="" /></a>
+              <a href="#"><img src="assets/img/twitter-logo.png" height="30px" alt="" /></a>
+              <a href="#"><img src="assets/img/pinterest-logo.png" height="30px" alt="" /></a>
+              <a href="#"><img src="assets/img/facebook-logo.png" height="30px" alt="" /></a>
             </div>
           </div>
         </div>
       </section>
       <!-- Features -->
-      <section class="features-1 py-5">
+      <section class="features-1 py-5" id="feature">
         <div class="container d-flex flex-column flex-lg-row align-items-center align-items-md-center gap-5">
           <!-- Cards -->
           <div class="d-flex flex-lg-column gap-4">
@@ -109,14 +110,16 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
           </div>
           <!-- Feature images -->
-          <div class="row">
+          <div class="row g-0">
             <div class="col-6">
-              <div class="tint">
-                <img class="img-fluid" src="assets/img/photo1.png" alt="" />
-              </div>
+              <img class="img-fluid" src="assets/img/photo1.png" alt="" />
             </div>
-            <img class="col-6" src="assets/img/photo2.png" alt="" />
-            <img class="col-12" src="assets/img/photo3.png" alt="" />
+            <div class="col-6">
+              <img class="img-fluid" src="assets/img/photo2.png" alt="" />
+            </div>
+            <div class="col-12">
+              <img class="img-fluid" src="assets/img/photo3.png" alt="" />
+            </div>
           </div>
         </div>
       </section>
@@ -180,10 +183,215 @@
         </div>
       </section>
       <!-- About -->
-      <section class="about">
-        <h2></h2>
+      <section class="about text-dark text-center" id="about">
+        <div class="container py-5">
+          <h2 class="fw-bold mb-3">WHY THIS IS AWESOME</h2>
+          <hr class="primary w-25 opacity-100 mx-auto" />
+          <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="row row-cols-md-3">
+            <div class="d-flex flex-column align-items-center gap-3">
+              <div class="svg-bg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-award"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"
+                  />
+                  <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
+                </svg>
+              </div>
+              <h5 class="fs-5 fw-normal">Thoughtful Design</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod ibendum laoreet.</p>
+            </div>
+            <div class="d-flex flex-column align-items-center gap-3">
+              <div class="svg-bg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search-heart"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z" />
+                  <path
+                    d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"
+                  />
+                </svg>
+              </div>
+              <h5 class="fs-5 fw-normal">Well Crafted</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean euismod bibendum.</p>
+            </div>
+            <div class="d-flex flex-column align-items-center gap-3">
+              <div class="svg-bg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-screwdriver"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 .995.995 0l3.064 2.19a.995.995 0 0 1 .417.809v.07c0 .264.105.517.291.704l5.677 5.676.909-.303a.995.995 0 0 1 1.018.24l3.338 3.339a.995.995 0 0 1 0 1.406L14.13 15.71a.995.995 0 0 1-1.406 0l-3.337-3.34a.995.995 0 0 1-.24-1.018l.302-.909-5.676-5.677a.995.995 0 0 0-.704-.291H3a.995.995 0 0 1-.81-.417L0 .995Zm11.293 9.595a.497.497 0 1 0-.703.703l2.984 2.984a.497.497 0 0 0 .703-.703l-2.984-2.984Z"
+                  />
+                </svg>
+              </div>
+              <h5 class="fs-5 fw-normal">Easy to Customize</h5>
+              <p>Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Pricing -->
+      <section class="pricing" id="pricing">
+        <div class="container text-center py-5">
+          <h2 class="text-uppercase">Pricing options</h2>
+          <hr class="w-25 opacity-100 mx-auto" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="row row-cols-1 gap-5 gap-lg-0 row-cols-lg-3 align-items-end">
+            <div class="pricing-card col">
+              <header class="pricing-card-header">
+                <h4>Basic</h4>
+                <p class="fs-1">$<span class="price">0</span></p>
+                <p class="opacity-50 text-light">Free for Life</p>
+              </header>
+              <hr />
+              <div class="pricing-card-content d-flex flex-column gap-2">
+                <p>1 GB OF SPACE</p>
+                <p>10 GB OF BANDWIDTH</p>
+                <p>3 WEBSITES</p>
+                <p>BASIC CUSTOMIZATION</p>
+                <p>WORDPRESS INTEGRATION</p>
+                <p>EMAIL SUPPORT</p>
+              </div>
+            </div>
+            <div class="pricing-card col">
+              <header class="pricing-card-header">
+                <h4>Professional</h4>
+                <p class="fs-1">$<span class="price">19</span></p>
+                <p class="opacity-50 text-light">Monthly Payment</p>
+              </header>
+              <div class="pricing-card-popular">OUR MOST POPULAR</div>
+              <div class="pricing-card-content d-flex flex-column gap-2">
+                <p>5 GB OF SPACE</p>
+                <p>50 GB OF BANDWIDTH</p>
+                <p>12 WEBSITES</p>
+                <p>ADVANCED CUSTOMIZATION</p>
+                <p>WORDPRESS INTEGRATION</p>
+                <p>EMAIL SUPPORT</p>
+              </div>
+            </div>
+            <div class="pricing-card col">
+              <header class="pricing-card-header">
+                <h4>Enterprise</h4>
+                <p class="fs-1">$<span class="price">70</span></p>
+                <p class="opacity-50 text-light">Monthly Payment</p>
+              </header>
+              <hr />
+              <div class="pricing-card-content d-flex flex-column gap-2">
+                <p>UNLIMITED OF SPACE</p>
+                <p>UNLIMITED BANDWIDTH</p>
+                <p>100 WEBSITES</p>
+                <p>ADVANCED CUSTOMIZATION</p>
+                <p>WORDPRESS INTEGRATION</p>
+                <p>24/7 CUSTOMER SUPPORT</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Reviews -->
+      <section class="reviews text-dark text-center py-5" id="reviews">
+        <div class="container">
+          <h2 class="fw-bold mb-4">WHAT OUR CUSTOMERS ARE SAYING</h2>
+          <hr class="w-25 mx-auto opacity-100 mb-5" />
+          <div>
+            <div class="row row-cols-3 gap-5 text-start align-items-end justify-content-between">
+              <div class="col-12 col-md-3">
+                <div class="review-box">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat
+                  similique odio aspernatur ex.
+                </div>
+                <div class="d-flex p-0 mt-3">
+                  <img src="https://avatars.dicebear.com/api/miniavs/as56d4.svg" width="70" height="70" alt="" />
+                  <div class="d-flex flex-column align-items-start">
+                    <p class="fs-5 fw-bold m-0">Jeremy H.</p>
+                    <p>Manager</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="review-box">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.
+                </div>
+                <div class="d-flex p-0 mt-3">
+                  <img src="https://avatars.dicebear.com/api/miniavs/asdasd.svg" width="70" height="70" alt="" />
+                  <div class="d-flex flex-column align-items-start">
+                    <p class="fs-5 fw-bold m-0">Jeremy H.</p>
+                    <p>Manager</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="review-box">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat
+                  similique odio aspernatur ex.
+                </div>
+                <div class="d-flex p-0 mt-3">
+                  <img src="https://avatars.dicebear.com/api/miniavs/asdaweqsd.svg" width="70" height="70" alt="" />
+                  <div class="d-flex flex-column align-items-start">
+                    <p class="fs-5 fw-bold m-0">Jeremy H.</p>
+                    <p>Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Us -->
+      <section class="contact py-5" id="contact">
+        <div class="container text-center d-flex flex-column align-items-center">
+          <h2 class="text-uppercase fw-bold mb-5">Contact Us</h2>
+          <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <form class="form-box d-flex flex-column justify-content-between">
+            <h3>Try Your <span class="primary">FREE</span> Trial Today</h3>
+            <div class="form-control-hero d-flex flex-column gap-2">
+              <input class="" type="text" placeholder="First name" />
+              <input class="" type="text" placeholder="Last name" />
+              <input class="" type="tel" placeholder="Phone number" />
+              <div class="d-flex align-items-center gap-2">
+                <input type="radio" name="contact" id="personal" />
+                <label class="radio-control" for="personal"> PERSONAL </label>
+                <input type="radio" name="contact" id="company" />
+                <label class="radio-control" for="company"> COMPANY </label>
+              </div>
+            </div>
+            <button class="btn-send">send</button>
+          </form>
+        </div>
       </section>
     </main>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="d-flex gap-5 col">
+            <a href="#"><img src="./assets/img/facebook-logo.png" height="20" alt="" /></a>
+            <a href="#"><img src="./assets/img/twitter-logo.png" height="20" alt="" /></a>
+            <a href="#"><img src="./assets/img/pinterest-logo.png" height="20" alt="" /></a>
+            <a href="#"><img src="./assets/img/facebook-logo.png" height="20" alt="" /></a>
+          </div>
+          <div class="col text-end opacity-50">© 2019 Cheshire County</div>
+        </div>
+      </div>
+    </footer>
     <script src="./dist/bundle.js"></script>
   </body>
 </html>

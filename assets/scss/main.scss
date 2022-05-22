@@ -84,6 +84,80 @@ h5 {
     }
 }
 
+.about {
+    .svg-bg {
+        display: grid;
+        place-content: center;
+        padding: 16px;
+        color: $primary;
+        border: 1px solid $primary;
+        border-radius: 50rem;
+    }
+}
+
+.pricing {
+    background-color: #6696E2;
+    
+    .pricing-card {
+        border-radius: 5px;
+        &-header{
+            padding: 14px 0;
+            background-color: #333333; 
+            border-radius: 5px 5px 0 0;
+            .price {
+                font-size: 84px;
+            }
+        }
+        hr{
+            margin: 0;
+            height: 6px;
+            color: #41D395;
+            opacity: 1;
+        }
+        &-popular{
+            padding: 10px 0;
+            background-color: #41D395;
+        }
+        &-content{
+            padding: 14px 0;
+            background-color: white;
+            color: #333333;
+            border-radius: 0 0 5px 5px;
+        }
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.reviews {
+    .review-box {
+        position: relative;
+        color: white;
+        background-color:#6696E2;
+        padding: 20px;
+        border-radius: 8px;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color:#6696E2;
+            bottom: -10px;
+            left: 25px;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.contact {
+    background-color: $primary;
+    form {
+        max-width: 390px;
+    }
+}
+
+
 // Form
 
 .form-box {
@@ -106,6 +180,7 @@ h5 {
     .radio-control {
         font-size: 9px;
         text-transform: uppercase;
+        cursor: pointer;
     }
     input {
         border: none;
@@ -211,4 +286,18 @@ h5 {
     border: none;
     border-radius: 0 0 5px 5px;
     padding: 18px 0;
+}
+
+.btn-send {
+    background-color: $green;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    padding: 14px 0;
+    margin-bottom: 30px;
+    align-self: center;
 }
